@@ -20,7 +20,7 @@ import time
 
 if sys.platform.startswith("linux"):
     # Third-Party Libraries
-    import pbs as host    
+    import sh as host    
     if not host.which("avahi-browse"):
         raise ImportError("unable to find avahi command-line tools")
 elif sys.platform.startswith("win"):
